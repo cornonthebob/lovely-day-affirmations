@@ -3,7 +3,10 @@ import React, { useState, useEffect } from 'react';
 import KindMessage from '@/components/KindMessage';
 import HappyFact from '@/components/HappyFact';
 import FeelGoodButton from '@/components/FeelGoodButton';
-import { Heart, Smile } from 'lucide-react';
+import DailyQuote from '@/components/DailyQuote';
+import GratitudeJournal from '@/components/GratitudeJournal';
+import ColorBreather from '@/components/ColorBreather';
+import { Heart, Smile, Star, BookOpen } from 'lucide-react';
 
 const Index: React.FC = () => {
   // Animation states
@@ -43,6 +46,19 @@ const Index: React.FC = () => {
             <FeelGoodButton />
           </section>
 
+          {/* Quote section */}
+          <section className="mb-10">
+            <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6 text-kind-deepPurple">
+              <span className="inline-flex items-center gap-2">
+                <BookOpen className="h-7 w-7" />
+                Daily Wisdom
+              </span>
+            </h2>
+            <div className="max-w-2xl mx-auto">
+              <DailyQuote />
+            </div>
+          </section>
+
           {/* Happy facts section */}
           <section className="mb-10">
             <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6 text-kind-deepPurple">
@@ -56,6 +72,20 @@ const Index: React.FC = () => {
             </div>
           </section>
 
+          {/* Gratitude and Breathing exercises */}
+          <section className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6 text-kind-deepPurple">
+              <span className="inline-flex items-center gap-2">
+                <Star className="h-7 w-7" />
+                Feel Good Activities
+              </span>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <GratitudeJournal />
+              <ColorBreather />
+            </div>
+          </section>
+
           {/* Daily affirmations */}
           <section className="mb-16 max-w-2xl mx-auto">
             <h3 className="text-xl md:text-2xl font-medium text-center mb-5 text-kind-deepPurple">Daily Reminders</h3>
@@ -64,13 +94,37 @@ const Index: React.FC = () => {
                 "You matter", 
                 "You are enough",
                 "Your feelings are valid",
-                "Progress takes time"
+                "Progress takes time",
+                "It's okay to rest",
+                "You are worthy"
               ].map((item, index) => (
                 <div 
                   key={index} 
-                  className="p-4 rounded-xl bg-white/60 backdrop-blur-sm border border-kind-lavender/20 text-center shadow-sm hover:shadow-md transition-all"
+                  className="p-4 rounded-xl bg-white/60 backdrop-blur-sm border border-kind-lavender/20 text-center shadow-sm hover:shadow-md transition-all hover:scale-105 cursor-default"
                 >
                   <p className="font-medium text-kind-purple">{item}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Fun facts grid */}
+          <section className="mb-16 max-w-3xl mx-auto">
+            <h3 className="text-xl md:text-2xl font-medium text-center mb-5 text-kind-deepPurple">Did You Know?</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {[
+                "Otters have a pouch where they keep their favorite rock",
+                "Cows have best friends",
+                "Flamingos can only eat with their heads upside down",
+                "Butterflies taste with their feet",
+                "Dolphins name each other with specific whistles",
+                "Squirrels plant thousands of trees by forgetting where they put their acorns"
+              ].map((fact, index) => (
+                <div 
+                  key={index} 
+                  className="p-4 rounded-xl bg-kind-lavender/20 backdrop-blur-sm border border-kind-lavender/20 text-center shadow-sm flex items-center justify-center hover:bg-kind-lavender/30 transition-all"
+                >
+                  <p className="text-sm font-medium text-kind-deepPurple">{fact}</p>
                 </div>
               ))}
             </div>
@@ -78,7 +132,8 @@ const Index: React.FC = () => {
         </main>
 
         <footer className="text-center text-sm text-muted-foreground mt-16 pb-6">
-          <p>Created with love to brighten your day 💜</p>
+          <p className="mb-2">Created with love to brighten your day 💜</p>
+          <p className="text-xs">Remember: You are exactly who you're meant to be.</p>
         </footer>
       </div>
     </div>

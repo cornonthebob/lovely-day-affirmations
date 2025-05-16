@@ -24,7 +24,31 @@ export const happyFacts = [
   "Singing releases endorphins, improving your mood almost instantly.",
   "Honeybees can recognize human faces.",
   "The world's oldest known living land animal is a tortoise named Jonathan, who is over 190 years old.",
-  "People who volunteer regularly live longer and report greater life satisfaction."
+  "People who volunteer regularly live longer and report greater life satisfaction.",
+  "Dolphins have names for each other and call to each other specifically.",
+  "Cows produce more milk when listening to soothing music.",
+  "The feeling of awe can actually reduce inflammation in the body.",
+  "Chocolate was once used as currency by the Aztecs.",
+  "Hugging for 20 seconds releases oxytocin, which can lower stress and anxiety.",
+  "Rainbow eucalyptus trees have naturally multi-colored bark that looks painted.",
+  "The Guinness World Record for the largest group hug was set in 2010 with 10,554 people.",
+  "Giant pandas can eat up to 40 pounds of bamboo per day.",
+  "There are more possible iterations of a game of chess than there are atoms in the observable universe.",
+  "Spending time in forests has been scientifically proven to strengthen your immune system.",
+  "Wombats' poop is cube-shaped, which prevents it from rolling away.",
+  "Astronauts on the International Space Station see 16 sunrises and sunsets every 24 hours.",
+  "When you smile at someone, they almost always smile back, even if they're trying not to.",
+  "The longest-lived butterfly species lives for about a year.",
+  "Dancing regularly can reduce the risk of dementia by 76%.",
+  "Goats have rectangular pupils that give them a 320-degree field of vision.",
+  "The word 'thanks' comes from the Latin word 'gratia,' which means 'grace' or 'gratefulness'.",
+  "Studies show that kindness is actually contagious - seeing someone help another person makes us more likely to help others too.",
+  "Octopuses have three hearts: two pump blood to the gills and one pumps it to the rest of the body.",
+  "Looking at the color blue can boost creativity.",
+  "An albatross can sleep while flying.",
+  "Sweden has a hotel made entirely of ice that is rebuilt every winter.",
+  "Listening to music releases dopamine, the same chemical released when eating chocolate.",
+  "Sloths can hold their breath underwater for up to 40 minutes."
 ];
 
 export const getRandomFact = (): string => {

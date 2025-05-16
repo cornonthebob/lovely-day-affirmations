@@ -21,7 +21,7 @@ const HappyFact: React.FC = () => {
   };
 
   return (
-    <Card className="bg-secondary/50 backdrop-blur-sm border-kind-lavender/30 overflow-hidden">
+    <Card className="bg-white/80 backdrop-blur-sm border-kind-lavender/30 overflow-hidden">
       <CardHeader className="pb-2">
         <CardTitle className="flex items-center gap-2 text-lg">
           <Heart className="h-5 w-5 text-kind-magenta" />
@@ -35,7 +35,7 @@ const HappyFact: React.FC = () => {
         <div 
           className={`transition-all duration-500 ${isAnimating ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'}`}
         >
-          <p className="text-sm md:text-base">{fact}</p>
+          <p className="text-sm md:text-base text-kind-deepPurple">{fact}</p>
           <p className="text-xs mt-3 text-muted-foreground">
             Click for another fun fact!
           </p>
